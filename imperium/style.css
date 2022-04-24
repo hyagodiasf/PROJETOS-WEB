@@ -142,6 +142,13 @@ p{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+
+}
+.empresa .linha:nth-child(1){
+	margin-bottom: 50px;
+}
+.empresa .linha:nth-child(2){
+	margin-bottom: 0px;
 }
 
 .empresa .linha .col50{
@@ -187,6 +194,65 @@ p{
 /**FIM INICIO**/
 
 
+/**INICIO BANNER2**/
+
+.banner2{
+	position: relative;
+	width: 100%;
+	min-height: 140vh;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background: url('img/img-frag.jpg');
+	background-size: cover;
+}
+
+.banner2 .content2{
+	max-width: 500px;
+	margin-left: 10px;
+}
+
+.banner2 .content2 h2{
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+}
+
+.banner2 .content2 p{
+	text-align: justify;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700px;
+}
+
+.btn2{
+	font-size: 1em;
+	color: #000;
+	background: #fff;
+	display: inline-block;
+	padding: 10px 50px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+.banner2 .content2 {
+	text-align: center;
+}
+
+.btn2:hover{
+	letter-spacing: 6px;
+}
+
+
+/**FIM BANNER2**/
+
+
+
+
+
 /**PERFUME INICIO**/
 
 
@@ -206,7 +272,6 @@ p{
 .perfumes .conteudos-per{
 	display: flex;
 	justify-content: center;
-	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	margin-top: 40px;
 }
