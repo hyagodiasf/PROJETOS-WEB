@@ -2,6 +2,6 @@
 PROJETOS DE SITES COM HTML5/CSS3/JS
 
 
-UM NOVO COMEÇO NO DESENCOLVIMENTO WEB.
+#Conclusão
 
-![Steroidtocat](https://url.da.imagem.com "Steroidtocat")
+Bom, aqui irei postar trabalhos relacionados a arte de desenvolver usando tecnologias web.
