@@ -2,6 +2,6 @@
 PROJETOS DE SITES COM HTML5/CSS3/JS
 
 
-#Conclusão
+# PROPOSTA
 
 Bom, aqui irei postar trabalhos relacionados a arte de desenvolver usando tecnologias web.
