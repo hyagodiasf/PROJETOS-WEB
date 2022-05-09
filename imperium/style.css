@@ -22,6 +22,14 @@ header.stick{
 	padding: 20px 50px;
 }
 
+header.stick a{
+	color: #ffc420;
+}
+
+header.stick ul li a{
+	color: #ffc420;
+}
+
 header .logo{
 	color: #fff;
 	font-weight: 300;
@@ -248,6 +256,70 @@ p{
 
 
 /**FIM BANNER2**/
+
+
+.heading{
+	width: 100%;
+	text-align: center;
+	color: #111;
+	margin-bottom: 30px;
+}
+
+.heading h2{
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.depoimento{
+	background: #f7f7f7;
+}
+
+.depoimento .content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.depoimento .content .depoimentobox{
+	max-width: calc(50% - 40px);
+	padding: 60px 40px;
+	margin: 20px;
+	background: #2196f3;
+}
+
+.depoimento .content .depoimentobox p{
+	color: #fff;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.depoimento .content .depoimentobox h3{
+	margin-top: 40px;
+	text-align: end;	
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1em;
+}
+
+.depoimento .content .depoimentobox h3 span{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+
 
 
 
