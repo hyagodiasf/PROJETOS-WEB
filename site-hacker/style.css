@@ -393,3 +393,16 @@ p{
 	resize: none;
 	height: 200px;
 }
+
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 10px 0px;
+	background: #2a2a2e;
+}
+
+footer .copyrightText{
+	text-align: center;
+	color: #fff;
+}
