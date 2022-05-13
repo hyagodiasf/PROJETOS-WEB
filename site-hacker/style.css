@@ -7,6 +7,7 @@
 :root{
 	--black: #000;
 	--white: #fff;
+	--color: #003e4e;;
 }
 
 header{
@@ -16,21 +17,24 @@ header{
 	width: 100%;
 	padding: 10px 100px;
 	display: flex;
-	z-index: 10000;
+	z-index: 9999;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--white);
-	border-bottom: 1px solid rgb(0, 0, 0, 0.05);
 	transition: 0.5s;
 }
 
 header.sticky{
 	padding: 10px 100px;
+	background: var(--color);
 }
 
-header img{
-	width: 100px;
-	height: 60px;
+
+
+header a{
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 30px;
+	color: #fff;
 }
 
 
@@ -47,26 +51,47 @@ header .blinking-cursor{
    }
 }
 
+
 .menuToggle{
-	position: relative;
-	width: 30px;
+	top: 10px;
+	right: 30px;
+	width: 60px;
 	height: 30px;
-	background: url(img/menu.png);
-	font-size: 30px;
-	background-repeat: no-repeat;
-	background-position: center;
 	cursor: pointer;
+	display: flex;
+	z-index: 10000;
+	justify-content: center;
+	align-items: center;
 }
 
-.menuToggle.active{
-	position: relative;
-	width: 30px;
-	height: 30px;
-	background: url(img/close.png);
-	font-size: 30px;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
+
+
+.menuToggle::before{
+	content: '';
+	position: absolute;
+	width: 28px;
+	height: 2px;
+	background: #fff;
+	transform: translateY(-5px);
+	transition: 0.2s;
+}
+
+.menuToggle::after{
+	content: '';
+	position: absolute;
+	width: 28px;
+	height: 2px;
+	background: #fff;
+	transform: translateY(5px);
+	transition: 0.2s;
+}
+
+.menuToggle.active::before{
+	transform: translateY(0px) rotate(45deg);
+}
+
+.menuToggle.active::after{
+		transform: translateY(0px) rotate(-45deg);
 }
 
 .navegation{
@@ -75,15 +100,16 @@ header .blinking-cursor{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--white);
+	background: var(--color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	z-index: 9999;
+	z-index: 9998;
 	transition: 0.25s;
 	opacity: 0;
 	visibility: hidden;
+	overflow: hidden;
 }
 
 .navegation.active{
@@ -97,7 +123,7 @@ header .blinking-cursor{
 }
 
 .navegation li a{
-	color: var(--black);
+	color: var(--white);
 	font-size: 1.2em;
 	letter-spacing: 4px;
 	display: inline-block;
@@ -117,7 +143,7 @@ section{
 	position: relative;
 	padding: 100px;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 130vh;
 	background: var(--white);
 }
 
@@ -138,9 +164,9 @@ section{
 
 .banner .contentBx{
 	position: relative;
+	border: 1px solid var(--white);;
 	z-index: 1;
 	padding: 70px;
-	background: var(--white);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -150,7 +176,7 @@ section{
 .banner .contentBx h2{
 	font-size: 2em;
 	font-weight: 500;
-	color: var(--black);
+	color: var(--white);
 	letter-spacing:2px;
 	text-align: center;
 	text-transform: uppercase;
@@ -165,14 +191,18 @@ section{
 	color: var(--black);
 }
 
+.anime{
+	color: var(--white);
+}
+
 
 .btn{
 	position: relative;
 	display: inline-block;
 	padding: 8px 20px;
 	margin-top: 20px;
-	border: 2px solid var(--black);
-	color: var(--black);
+	border: 2px solid var(--white);
+	color: var(--white);
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 600;
