@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins', sans-serif;}
+
+
+body{
+	height: 150vh;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+	background: #000;
+}
+
+header .logo{
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+header .menu-nav{
+	position: relative;
+	display: flex;
+	font-weight: 700;
+}
+
+header .menu-nav li{
+	list-style: none;
+}
+
+header .menu-nav li a{
+	display: inline-block;
+	color: #fff;
+	margin-right: 40px;
+	text-decoration: none;
+	padding: 5px;
+}
+
+header .menu-nav li a:hover{
+	color: #ff0157;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 130vh;
+	background: url('banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container .containerText{
+	width: 600px;
+	padding: 150px 20px;
+	color: #fff;
+}
+
+.container .containerText h2{
+	font-size: 30px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.container .containerText p{
+	text-align: justify;
+	font-weight: 300;
+	margin: 15px 0px 25px 0px;
+	transition: 0.6s;
+}
+
+.container .containerText p:before{
+	position: absolute;
+	content: '';
+	left: 20px;
+	height: 2px;
+	width: 560px;
+	margin-top: -10px;
+	background: #ff0157;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out; 0s;
+}
+
+.container .containerText:hover p:before{
+	transform: scaleX(1);
+	transform-origin: left;
+
+}
+
+.container .containerText a{
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.container .containerText a:hover{
+	background-color: #8B0000;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+
+.introducao{
+	background: #f5f5f7;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.introducao h2{
+	width: 50%;
+	text-align: center;
+	padding: 40px;
+}
+
+.introducao p{
+	width: 60%;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+
+
+
+
+
+
