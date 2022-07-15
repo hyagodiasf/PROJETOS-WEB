@@ -1,0 +1,400 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+
+<div id="linkBB202162084848744" class="visualizar" align="center">
+  <h3><font color="#3F70C0">Pague também pelo Cartão de Crédito ou débito em Conta</font></h3>
+  <table cellspacing="0" cellpadding="2" border="0">
+    <tbody><tr>
+      <td><form name="frmBB" action="https://www2.bancobrasil.com.br/aapf/login.jsp" method="post" target="_blank">
+          <input type="hidden" name="transacao" value="pagamento/892.jsp">
+          <input type="hidden" name="codT" value="03">
+          <input type="hidden" name="barraCampo1" value="856200000029">
+          <input type="hidden" name="barraCampo2" value="000000062026">
+          <input type="hidden" name="barraCampo3" value="106092021620">
+          <input type="hidden" name="barraCampo4" value="084848744003">
+          <input type="hidden" name="dataPagamento" value="09/06/2021">
+          <!--input type="hidden" name="$formaPagamento" value="contaCorrente"-->
+          <!--input type="hidden" name="tipoTransacao" value="jsp" -->
+          <!--input type="hidden" name="$valorConvenio" value="20000" -->
+          <!--input type="hidden" name="$codigoBarra" value = "1" -->
+          <!--input type="hidden" name="$barraLeitora" value = "" -->
+          <!--input type="hidden" name="botaoLoginInteligente.x" value = "21" -->
+          <input type="image" src="validacao.asp_files/logo_BB_PF.jpg" alt="Banco do Brasil" onclick="msgAguarde.style.visibility = 'visible'" ;="" border="0">
+        </form></td>
+      <td><form name="frmBB" action="https://aapj.bb.com.br/aapj/liemp.bb?codigoTransacao=892" method="post" target="_blank">
+          <input type="hidden" name="CodigoTransacao" value="892">
+          <input type="hidden" name="data" value="09/06/2021">
+          <input type="hidden" name="codigo1" value="856200000029">
+          <input type="hidden" name="codigo2" value="000000062026">
+          <input type="hidden" name="codigo3" value="106092021620">
+          <input type="hidden" name="codigo4" value="084848744003">
+          <input type="image" src="validacao.asp_files/logo_BB_PJ.jpg" alt="Banco do Brasil" onclick="msgAguarde.style.visibility = 'visible'" border="0">
+        </form></td>
+      <td alt="Bradesco"><form name="frmBRD" action="https://wwwss.bradesco.com.br/scripts/ib2k1.dll/MUNICIPAIS" method="get" target="_blank">
+          <input type="hidden" name="CODBAR" value="856200000029000000062026106092021620084848744003">
+          <input type="image" src="validacao.asp_files/logo_Bradesco.JPG" alt="Bradesco" onclick="msgAguarde.style.visibility = 'visible'" border="0">
+        </form></td>
+      <td><!--form name="frmCEF" action="https://internetbanking.caixa.gov.br/SIIBC/index.processa" method="post" target="_blank" >
+  <input type="hidden" name="acessoExterno" value="entrada_ext_boleto.processa">
+  <input type="hidden" name="IdentificacaoOrigem" value="0002">
+  <input type="hidden" name="DataRequisicao" value="20210608">
+  <input type="hidden" name="HoraRequisicao" value="145917">
+  <input type="hidden" name="IPCliente" value="172.30.191.212">
+  <input type="hidden" name="CNPJ" value="07954597000152">
+  <input type="hidden" name="IdentificacaoTransacao" value="050">
+  <input type="hidden" name="CodigoSolicitacao" value="02">
+  <input type="hidden" name="CodigoBarras" value = "856200000029000000062026106092021620084848744003">
+  <input type="hidden" name="Conveniado" value = "1510">
+  <input type="hidden" name="DataVencimento" value = "20210609">
+  <input type="hidden" name="ValorTotal" value = "20000">
+  <input type="hidden" name="ValorMinimo" value = "20000">
+  <input type="hidden" name="NomeConveniado" value = "SEFAZ/CE">
+  <input type="hidden" name="NomeCliente" value = "Contribuinte SEFAZ/CE">
+ 
+  <INPUT TYPE="image" SRC="/internet/imagens/logo_cef.jpg" BORDER="0" ALT="CEF" onclick="msgAguarde.style.visibility = 'visible'">
+</form-->
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<div id="msgAguarde" style="visibility:hidden" align="center">
+  <h3><i><font color="#3F70C0">Redirecionando para a página do Banco. Aguarde...</font></i><font color="#3F70C0"></font></h3>
+</div>
+<script language="JavaScript">
+function imprimir2() {
+document.getElementById('linkBB').style.display = "none";
+print();
+document.getElementById('linkBB').style.display = "";
+}
+</script>
+<script for="window" event="onbeforeprint" language="javascript">botoes.style.display="none";</script>
+<script for="window" event="onafterprint" language="javascript">botoes.style.display="";</script>
+
+<div id="botoes">
+  <table align="center">
+    <tbody><tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><input type="button" value="Imprimir" onclick="imprimir(1)" class="botao" name="button"></td>
+      
+    </tr>
+  </tbody></table>
+</div>
+<style>
+  .ocultar { display:none; visibility: hidden; }
+  .visualizar { visibility: visible; display:block;}
+ </style>
+<script language="javascript">
+
+  var divOcultar = "linkBB";
+
+  var divs = document.getElementsByTagName("div");
+
+  var divsAction = new Array();
+
+  function imprimir(delay) {
+
+   delay = delay || 5;
+
+	for (x = 0; x < divs.length; x++) {
+
+		divName = divs[x].getAttribute("id");
+
+		if (divName.indexOf(divOcultar) == 0){
+
+			divsAction.push(divName);
+
+			document.getElementById(divName).className = "ocultar";
+
+		}
+	}
+
+   setTimeout(
+    function(){
+
+     window.print();
+
+     setTimeout(
+      function(){
+
+		for (x = 0; x <= divsAction.length; x++) {
+
+			dn = divsAction.shift();
+
+			document.getElementById(dn).className = "visualizar";
+		}
+
+      },
+      1000
+     );
+    },
+    delay * 1000
+   );
+
+  }
+
+ </script>
+
+<br>
+<table style="border: 1px solid #000000" width="634" height="282" cellspacing="0" align="center">
+  <tbody><tr>
+    <td valign="top"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td width="100%"><table width="100%" cellpadding="0" border="0">
+              <tbody><tr>
+                <td width="30" valign="top"><img src="validacao.asp_files/brasao_estado.gif" width="34" height="45"></td>
+                <td width="240"><font face="Arial"><b><font size="2">ESTADO DO CEARÁ</font></b><br>
+                  <font size="1">Secretaria da Fazenda<br>
+                  DAE - </font><font size="1">Documento de Arrecadação Estadual </font></font></td>
+                <td align="center"><font size="1" face="Arial">NUMERAÇÃO 
+                  DO CÓDIGO DE BARRAS<br>
+                  856200000029  000000062026  106092021620  084848744003</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <table width="100%" cellspacing="0" cellpadding="2" border="0">
+        <tbody><tr>
+          <td width="52%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">1 - CÓDIGO/ESPECIFICAÇÃO DA RECEITA</font></td>
+              </tr>
+              <tr>
+                <td align="left"><font size="1" face="Arial">8583 - IDECAN INSCRICAO CONCURSO PEFOCE 2021</font></td>
+              </tr>
+            </tbody></table></td>
+          <td width="23%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">2 - DATA VENCIMENTO</font></td>
+              </tr>
+              <tr>
+                <td align="center"><font size="1" face="Arial">09/06/2021</font></td>
+              </tr>
+            </tbody></table></td>
+          <td width="25%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">3 - PAGAMENTO ATÉ</font></td>
+              </tr>
+              <tr>
+                <td align="center"><font size="1" face="Arial">09/06/2021</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <table width="100%" cellspacing="0" cellpadding="2" border="0">
+        <tbody><tr>
+          <td width="75%" valign="top" height="9"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="100%" valign="top" height="95"><font size="1" face="Arial">11 - IDENTIFICAÇÃO DO CONTRIBUINTE<br>
+                  HYAGO SAYOMAR DIAS FERREIRA<br><br><br><br><br></font></td>
+              </tr>
+            </tbody></table></td>
+          <td rowspan="2" width="25%" valign="top" height="18"><table width="100%" height="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td style="border: 1px solid #000000; border-bottom: none"><font size="1" face="Arial">4 - NOSSO NÚMERO</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="center"><font size="1" face="Arial">2021.62.0848487-44</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">5 - PERÍODO REFERÊNCIA</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="center"><font size="1" face="Arial">20/2021</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">6 - VALOR PRINCIPAL</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 200,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">7 - MULTA</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">8 - JUROS</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">9 - DESCONTOS</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">10 - TOTAL A RECOLHER</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial Black">***** R$ 200,00</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr style="border: 1px solid #000000; border-bottom: none" align="center">
+          <td width="75%" valign="top" height="9"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="100%" valign="top" height="93"><font size="1" face="Arial">12 - INFORMAÇÕES COMPLEMENTARES<br>
+                  DAE IMPRESSO NO SITE WWW.SEFAZ.CE.GOV.BR<br>
+                  <br><br><br><br></font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <div id="id1" align="center">
+        <table width="100%" height="40" cellspacing="0" cellpadding="2" border="0">
+          <tbody><tr>
+            <td width="75%" valign="top"><font size="1" face="Arial">13 - CÓDIGO DE BARRA</font>
+              <div id="id2" align="center"><font size="1" face="Arial">856200000029  000000062026  106092021620  084848744003<br><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"></font></div></td>
+            <td width="25%" valign="top"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                  <td width="100%" valign="top" align="center"><font size="1" face="Arial">1ª VIA - CONTRIBUINTE</font></td>
+                </tr>
+                <tr>
+                  <td width="100%" valign="top" align="center"><font size="1" face="Arial">(AUTENTICAÇÃO NO VERSO)</font></td>
+                </tr>
+              </tbody></table></td>
+          </tr>
+        </tbody></table>
+      </div></td>
+  </tr>
+</tbody></table>
+<div id="id3" align="center"><br>
+  <img src="validacao.asp_files/recortar.gif" width="683" height="15" border="0"></div>
+<br>
+<table style="border: 1px solid #000000" width="634" height="282" cellspacing="0" align="center">
+  <tbody><tr>
+    <td valign="top"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td width="100%"><table width="100%" cellpadding="0" border="0">
+              <tbody><tr>
+                <td width="30" valign="top"><img src="validacao.asp_files/brasao_estado.gif" width="34" height="45"></td>
+                <td width="240"><font face="Arial"><b><font size="2">ESTADO DO CEARÁ</font></b><br>
+                  <font size="1">Secretaria da Fazenda<br>
+                  DAE - </font><font size="1">Documento de Arrecadação Estadual </font></font></td>
+                <td align="center"><font size="1" face="Arial">NUMERAÇÃO DO CÓDIGO DE BARRAS<br>
+                  856200000029  000000062026  106092021620  084848744003</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <table width="100%" cellspacing="0" cellpadding="2" border="0">
+        <tbody><tr>
+          <td width="52%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">1 - CÓDIGO/ESPECIFICAÇÃO DA RECEITA</font></td>
+              </tr>
+              <tr>
+                <td align="left"><font size="1" face="Arial">8583 - IDECAN INSCRICAO CONCURSO PEFOCE 2021</font></td>
+              </tr>
+            </tbody></table></td>
+          <td width="23%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">2 - DATA VENCIMENTO</font></td>
+              </tr>
+              <tr>
+                <td align="center"><font size="1" face="Arial">09/06/2021</font></td>
+              </tr>
+            </tbody></table></td>
+          <td width="25%" valign="top"><table style="border: 1px solid #000000" width="100%" height="28" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td><font size="1" face="Arial">3 - PAGAMENTO ATÉ</font></td>
+              </tr>
+              <tr>
+                <td align="center"><font size="1" face="Arial">09/06/2021</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <table width="100%" cellspacing="0" cellpadding="2" border="0">
+        <tbody><tr>
+          <td width="75%" valign="top" height="9"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="100%" valign="top" height="95"><font size="1" face="Arial">11 - IDENTIFICAÇÃO DO CONTRIBUINTE<br>
+                  HYAGO SAYOMAR DIAS FERREIRA<br><br><br><br><br></font></td>
+              </tr>
+            </tbody></table></td>
+          <td rowspan="2" width="25%" valign="top" height="18"><table width="100%" height="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td style="border: 1px solid #000000; border-bottom: none"><font size="1" face="Arial">4 - NOSSO NÚMERO</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="center"><font size="1" face="Arial">2021.62.0848487-44</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">5 - PERÍODO REFERÊNCIA</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="center"><font size="1" face="Arial">20/2021</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">6 - VALOR PRINCIPAL</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 200,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">7 - MULTA</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">8 - JUROS</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">9 - DESCONTOS</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial">***** R$ 0,00</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-bottom: none; border-top: none"><font size="1" face="Arial">10 - TOTAL A RECOLHER</font></td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000000; border-top: none" align="right"><font size="1" face="Arial Black">***** R$ 200,00</font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr style="border: 1px solid #000000; border-bottom: none" align="center">
+          <td width="75%" valign="top" height="9"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="100%" valign="top" height="93"><font size="1" face="Arial">12 - INFORMAÇÕES COMPLEMENTARES<br>
+                  DAE IMPRESSO NO SITE WWW.SEFAZ.CE.GOV.BR<br>
+                  <br><br><br><br></font></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      <div id="id4" align="center">
+        <table width="100%" height="40" cellspacing="0" cellpadding="2" border="0">
+          <tbody><tr>
+            <td width="75%" valign="top"><font size="1" face="Arial">13 - CÓDIGO DE BARRA</font>
+              <div id="id5" align="center"><font size="1" face="Arial">856200000029  000000062026  106092021620  084848744003<br><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bgb.gif" width="3" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bgp.gif" width="3" height="50"><img src="validacao.asp_files/bfb.gif" width="1" height="50"><img src="validacao.asp_files/bfp.gif" width="1" height="50"></font></div></td>
+            <td width="25%" valign="top"><table style="border: 1px solid #000000" width="100%" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                  <td width="100%" valign="top" align="center"><font size="1" face="Arial">2ª VIA - SEFAZ</font></td>
+                </tr>
+                <tr>
+                  <td width="100%" valign="top" align="center"><font size="1" face="Arial">(AUTENTICAÇÃO NO VERSO)</font></td>
+                </tr>
+              </tbody></table></td>
+          </tr>
+        </tbody></table>
+      </div></td>
+  </tr>
+</tbody></table>
+<div id="id3" align="center"><br>
+  <img src="validacao.asp_files/recortar.gif" width="683" height="30" border="0"></div>
+<br>
+
+
+
+</body></html>
