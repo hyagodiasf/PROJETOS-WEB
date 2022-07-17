@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(17, 86, 102);
+}
+
+.container{
+  width: 450px;
+  border-radius: 10px;
+  background: #ccc;
+  box-shadow: 2 px 5px 25px 2px #000;
+}
+
+.container h1{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.container .conteudo{
+  margin: 25px 25px 35px;
+}
+
+.container .conteudo .inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .conteudo .inputs input{
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  color: #1bb295;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #bcbcbc;
+}
+
+.container .conteudo .inputs input:first-child{
+  margin-left: 0px;
+}
+
+.container .conteudo .detalhes{
+  margin: 20px 0 25px;
+}
+
+.container .conteudo .detalhes p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.container .conteudo .btn-reset{
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-size: 17px;
+  padding: 15px 0;
+  background: rgb(17, 86, 102);
+  border-radius: 5px;
+}
