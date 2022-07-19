@@ -1,5 +1,6 @@
 //pega a tag select do index.html
 const selete = document.querySelectorAll("select");
+const time = document.querySelectorAll("h1");
 //for para a option de horas
 for (let i = 12; i > 0; i--) {
     if(i < 10 ){
@@ -44,3 +45,17 @@ for (let i = 2; i > 0; i--) {
     } 
     
 }
+
+setInterval(() => {
+    //pegar hora, minutos e segundos
+    let times = new Date(),
+    hora = times.getHours(),
+    minutos = times.getMinutes(),
+    segundos = times.getSeconds(),
+    am = "AM";
+
+    if(hora >= 12){
+        hora = hora - 12;
+        pm = "PM"
+    }
+}, 1000);
