@@ -1,3 +1,7 @@
+$("header").append("<div class='glitch-window'></div>");
+//fill div with clone of real header
+$( "h2.glitched" ).clone().appendTo( ".glitch-window" );
+
 //aqui pega a ag h1 onde vai ficar a numeração do relógio
 const timer = document.querySelector("h1");
 //for para a option de horas
