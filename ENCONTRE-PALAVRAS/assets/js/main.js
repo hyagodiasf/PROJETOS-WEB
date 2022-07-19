@@ -58,6 +58,19 @@ function radomPalavra(){
     resul.innerHTML = html;
 }
 radomPalavra();
+
+function initGame(e){
+    let chave = e.target.value;
+    if(chave.match(/^[A-Za-z]+$/)){
+        console.log(chave);
+        if(palavra.includes(chave)){
+           console.log("Palavra encontrada");
+        }else{
+            console.log("Palavra não encontrada");
+        }
+    }
+}
+
 reset.addEventListener("click", radomPalavra);
-digita.document.addEventListener("input", initGame);
+digita.addEventListener("input", initGame);
 document.addEventListener("keydown", () => digita.focus());
