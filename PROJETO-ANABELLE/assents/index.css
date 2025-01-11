@@ -1,0 +1,90 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+body{
+    background-color: #4d0000;
+}
+
+.capa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa .capa_img{
+    width: 80%;
+}
+
+.capa .capa_img img{
+    width: 100%;
+    height: 70vh;
+}
+
+.capa .capa_img .menu ul{
+    width: 100%;
+    position: relative;
+    margin-top: -42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9b5b5;
+    opacity: 0.7;
+}
+
+.capa .capa_img .menu ul li{
+	position: relative;
+	list-style: none;
+	padding: 10px 10px;
+	cursor: pointer;      
+}
+
+.capa .capa_img .menu ul li a{
+	position: relative;
+	margin: 15px;
+    padding: 2px 0;
+	text-decoration: none;
+	color: #000000;
+	letter-spacing: 2px;
+    font-weight: 900;
+	transition: 0.6s;
+}
+
+.capa .capa_img .menu ul li a:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 9px;
+	height: 2px;
+	width: 100%;
+	background: #dd0c0c;	
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+
+.capa .capa_img .menu ul li:hover a:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.body{
+    text-align: justify;
+    color: #c9b5b5;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
