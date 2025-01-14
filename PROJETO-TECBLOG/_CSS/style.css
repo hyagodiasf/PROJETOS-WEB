@@ -1,0 +1,108 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+.header {
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .header-container {
+    width: 650px;
+    height: 160px;
+}
+
+.header .header-container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.header .header-container .logo{
+    font-size: 3rem;    
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .header-container .logo span{
+    color: #4B4750;
+}
+
+.header .header-container .logo .blog {
+    color: #fff;
+    font-weight: 900;
+}
+
+
+.header .header-container .nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.header .header-container .nav ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Noto Sans Linear A", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.header .header-container .nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+.header .header-container .nav ul a:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #ffc400;
+}
+
+.body {
+    background-color: #fbf8fb;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.body .postagem-center {
+    background-color: #ffffff;
+    width: 800px;
+    height: 900px;
+    margin: 20px;
+}
+
+.body .side .postagem-right-1{
+    background-color: #ffffff;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body .side .postagem-right-2{
+    background-color: #ffffff;
+    width: 300px;
+    height: 100px;
+}
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    color: #fbf8fb;
+    font-weight: 400;
+}
