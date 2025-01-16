@@ -46,7 +46,6 @@
 
 .header .header-container .nav ul li{
     list-style: none;
-    padding: 10px;
     margin: 10px;
     font-family: "Noto Sans Linear A", serif;
     font-weight: 400;
@@ -69,30 +68,86 @@
 .body {
     background-color: #fbf8fb;
     width: 100%;
-    height: auto;
+    height: 195vh;
     display: flex;
     justify-content: center;
 }
 
 .body .postagem-center {
     background-color: #ffffff;
-    width: 800px;
-    height: 900px;
+    width: 680px;
+    height: 190vh;
     margin: 20px;
+}
+
+.body .postagem-center h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #ffc400;
+}
+
+.body .postagem-center p {
+    margin-left: 20px;
+    width: 650px;
+    text-align: justify;
+}
+
+.body .postagem-center img {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.body .postagem-center a{
+    margin-left: 20px;
+    color: #ffc400;
 }
 
 .body .side .postagem-right-1{
     background-color: #ffffff;
     width: 300px;
-    height: 100px;
+    height: 200px;
     margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;   
+}
+
+.body .side .postagem-right-1 h3{
+    background-color: #a1a1a1;
+    padding: 5px;
     margin-bottom: 20px;
+}
+
+.body .side .postagem-right-1  a{
+    color: #ffc400;
+}
+
+.body .side .postagem-right-1 hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .body .side .postagem-right-2{
     background-color: #ffffff;
     width: 300px;
-    height: 100px;
+    height: 160px;
+    padding: 10px; 
+}
+
+.body .side .postagem-right-2 h3 {
+    background-color: #a1a1a1;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.body .side .postagem-right-2 li {
+    list-style: none;
+    margin-top: 2px;
+}
+
+.body .side .postagem-right-2 li a {
+    text-decoration: none;
+    color: #ffc400;
 }
 
 .rodape {
