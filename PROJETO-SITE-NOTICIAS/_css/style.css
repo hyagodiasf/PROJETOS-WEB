@@ -1,0 +1,202 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+.container-nav {
+    background-image: url('../_img/fundo.png');
+    width: 100%;
+    height: 38vh;
+
+}
+
+.container-nav .content-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-nav .content-nav > img {
+    margin: 10px 20px 00px 20px;
+}
+
+.container-nav .content-nav ul{
+    background-color: #b1002f;
+    display: flex;
+    list-style: none;
+}
+
+.container-nav .content-nav ul li{
+    cursor: pointer;
+    padding: 2px 15px 2px;
+}
+
+.container-nav .content-nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-nav .content-nav ul li:hover a{
+    color: #000;
+}
+
+.conteudo {
+    margin: auto;
+    width: 750px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.conteudo .primairo, .secundario {
+    width: 270px;
+    height: 320px;
+    background: url('../_img/fundo-caixa.png');
+}
+
+.conteudo .primairo .conteudo-primeiro, .conteudo-secundario,.lateral-menu {
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+}
+
+.conteudo .primairo .conteudo-primeiro h5{
+    background-color: #b1002f;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.conteudo .primairo .conteudo-primeiro a, .secundario a{
+    text-decoration:underline;
+}
+
+.conteudo .primairo 
+.conteudo-primeiro img, 
+.conteudo-secundario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo .conteudo-secundario h5{
+    background-color: #b1002f;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.conteudo .lateral {
+    width: 180px;
+    background: url('../_img/fundo-caixa.png');
+}
+
+.conteudo .lateral-header,.center-header, 
+.right-header, .conteudo-email h4,
+.conteudo .primario2 h4{
+    background-color: #28496f;
+    padding: 3px;
+    margin: 10px;
+    color: #fff;
+}
+
+.conteudo .lateral .lateral-menu ul li, a{
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.conteudo .lateral .lateral-menu ul li:hover a {
+    background: url('../_img/marcador.png') no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+.conteudo-email{
+    background: url('../_img/fundo-caixa.png');
+    width: 180px;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.conteudo-email .email{
+    background-color: #fff;
+    margin: 10px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.conteudo-email .email input {
+    width: 100%;
+    border: 0.5px solid black 0.5;
+}
+
+.conteudo-email .email button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #b1002f;
+    color: #fff;
+}
+
+.conteudo .primario2 {
+     width: 270px;
+     background: url('../_img/fundo-caixa.png');
+}
+
+.conteudo .primario2{
+    width: 270px;
+    height: 320px;
+    margin-top: -50px;
+}
+
+.conteudo .primario2 .conteudo-prima2{
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+
+.conteudo .primario2 .conteudo-prima2 .conteudo-primario2-postagem {
+    border-bottom:1px solid rgb(166, 180, 174);
+    padding-bottom: 5px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.conteudo .primario2 .conteudo-prima2 .conteudo-primario2-postagem .pstagem-img{
+    width: 120px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.conteudo .primario2 .conteudo-prima2 .conteudo-primario2-postagem .pstagem-img img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.conteudo .primario2 .conteudo-prima2 .conteudo-primario2-postagem .postagem-conteudos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.conteudo .primario2 .conteudo-prima2 .conteudo-primario2-postagem .postagem-conteudos h6 {
+    color: #639bd0;
+    margin-left: 10px;
+}
+
+.container-rodape  {
+    text-align: center;
+    background: #294c71;
+    padding: 20px;
+}
+
+.container-rodape .rodape{
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    
+}
