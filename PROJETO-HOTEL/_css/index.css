@@ -5,8 +5,59 @@
 }
 
 .content-menu .content-menu-bg {
+    display: flex;
+    justify-content: end;
     width: 100%;
     height: 200px;
-   background: url("../_img/topo-imagem-lateral.png") no-repeat right;
+    background: url("../_img/topo-imagem-lateral.png") no-repeat right;
 }
+
+.content-menu .content-menu-bg .menu-end-reserve{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .endereco {
+    display: flex;
+    color: #98934d;
+    padding: 10px;
+    margin: 20px 0px 10px 0px;
+    border-top: 2px solid #a29750;
+    border-bottom: 2px solid #a29750;
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .endereco h4{
+    margin-right: 60px;
+    line-height: 40px;
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .endereco button {
+    background-color: #a29750;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .nav-bar .nav-bar-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .nav-bar .nav-bar-menu ul li a{
+    text-decoration: none;
+    color: #a29750;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.content-menu .content-menu-bg .menu-end-reserve .nav-bar .nav-bar-menu ul li:hover a {
+    background-color: aliceblue;
+}
+
+
 
