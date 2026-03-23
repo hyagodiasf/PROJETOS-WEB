@@ -4,6 +4,10 @@
     background: url("../_img/topo-imagem-principal.png") no-repeat left;
 }
 
+.content-menu img{
+    position: absolute;
+}
+
 .content-menu .content-menu-bg {
     display: flex;
     justify-content: end;
@@ -59,5 +63,46 @@
     background-color: aliceblue;
 }
 
+.body-hotel {
+    background:#ede9cc url('/PROJETO-HOTEL/_img/bg-container.png') top center repeat-y;
+    display: flex;
+}
 
+.body-hotel .body-right-content {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.body-hotel .body-right-content > p{
+    margin-top: 10px;
+}
+
+
+.body-hotel .body-left-content .content-img{
+    display: flex;
+    padding: 20px;
+}
+
+.body-hotel .body-left-content .content-img .img-cotent {
+    margin-right: 10px;
+}
+
+.body-hotel .body-left-content .content-img .h-p-content h4, .body-right-content h4 {
+    color: #a29750;
+}
+
+
+.body-hotel .body-left-content img {
+    width: 100px;
+    height: auto;
+} 
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #a29750;
+}
 
