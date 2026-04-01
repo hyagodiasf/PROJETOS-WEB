@@ -68,7 +68,32 @@ body {
 .principal .conteudo {
     width: 710px;
     margin-right: 20px;
+     margin-top: -75px;
 }
+
+.principal .conteudo h3 {
+    color: #227115;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.principal .conteudo .postagens{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal .conteudo a{
+    cursor: pointer;
+}
+
+.principal .conteudo .postagens article {
+    width: 330px;
+    margin: 10px;
+}
+
 
 .principal aside {
     width: 350px;
@@ -113,6 +138,16 @@ section.visita fieldset {
     margin-bottom: 10px;
 }
 
+section.galeria {
+    margin-top: 15px;
+    background: #9b9271;
+}
+
+section.galeria h4{
+    padding-top: 10px;
+    color: #fff;
+}
+
 section.galeria .galeria-fotos{
     display: flex;
     flex-direction: row;
@@ -120,9 +155,22 @@ section.galeria .galeria-fotos{
     flex-wrap: wrap;
 }
 
-
 section.galeria .galeria-fotos a {
     padding: 17px 15px 17px 15px;
     margin: 10px;
     background: url("../_img/fundo-foto.png") no-repeat;
+}
+
+.container-rodape  {
+    margin-top: 10px;
+    text-align: center;
+     background: #f4f2ec url('../_img/fundo.png') repeat-x;
+    padding: 20px;
+}
+
+.container-rodape .rodape{
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    
 }
