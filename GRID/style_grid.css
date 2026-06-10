@@ -1,0 +1,37 @@
+*{box-sizing: border-box;margin: 0px;padding: 0px;}
+
+
+body {
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid > div {
+    border: 5px solid yellowgreen;
+}
+
+.grid .item2 {
+    grid-column: span 2;
+}
+
+.grid .item3 {
+    grid-column: span 2;
+}
+
+.grid .item4 {
+    grid-row: span 2;
+}
+
+.grid .item7 {
+    grid-column: span 3;
+}
