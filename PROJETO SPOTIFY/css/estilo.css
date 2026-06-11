@@ -1,0 +1,8 @@
+
+.navbar-custom .nav-link{
+    color: white;
+}
+
+.navbar-custom .nav-link:hover{
+    color: #8bf0e1;
+}
