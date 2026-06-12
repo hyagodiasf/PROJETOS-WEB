@@ -1,8 +1,42 @@
-
-.navbar-custom .nav-link{
-    color: white;
+body {
+  background:
+    url(../imagens/capa.png), linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
 }
 
-.navbar-custom .nav-link:hover{
-    color: #8bf0e1;
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #8bf0e1;
+}
+
+.btn-costum {
+  color: white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.btn-roxo {
+  background-color: #7c25f8;
+}
+
+.btn-roxo:hover {
+  background-color: #6707e3;
+  color: white;
+}
+
+.btn-branco {
+  border: 2px solid white;
+}
+
+.btn-branco:hover {
+  background-color: white;
+  color: black;
+}
+
+h1.destaque {
+  font-size: clamp(3rem, 10vw, 6rem);
 }

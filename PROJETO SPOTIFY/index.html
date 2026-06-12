@@ -14,8 +14,11 @@
   </head>
 
   <body>
-    <header><!--INICIO MENU-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top bg-opacity-50 navbar-custom">
+    <header>
+      <!--INICIO MENU-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black fixed-top bg-opacity-50 navbar-custom"
+      >
         <div class="container">
           <!--LOGO-->
           <a class="navbar-brand" href="#">
@@ -54,8 +57,65 @@
           </div>
         </div>
       </nav>
-    </header><!--FIM MENU-->
+    </header>
+    <!--FIM MENU-->
 
+    <section class="vh-100 d-flex align-items-center text-center"> <!--CAPA-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="carousel-home" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <!--ITEM 1-->
+                  <h1 class="text-white destaque">Música para todos</h1>
+                  <a href="#" class="btn btn-custom btn-roxo mb-2 mb-sm-0"
+                    >Aproviete o Spotify Free</a
+                  >
+                  <a href="#" class="btn btn-custom btn-branco"
+                    >Obter o Spotify Premium</a
+                  >
+                </div>
+                <div class="carousel-item active">
+                  <!--ITEM 2-->
+                  <h1 class="text-white destaque">As melhores rádios</h1>
+                  <a href="#" class="btn btn-custom btn-branco"
+                    ><i class="bi bi-music-note-beamed"></i> Ouça agora</a
+                  >
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#carousel-home"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#carousel-home"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white"><!--SERVIÇOS-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">Imagens</div>
+          <div class="col-lg-6">TEXTOS</div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
