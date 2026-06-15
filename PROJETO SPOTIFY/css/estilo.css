@@ -40,3 +40,29 @@ body {
 h1.destaque {
   font-size: clamp(3rem, 10vw, 6rem);
 }
+
+#servicos h2,h3{
+    color: #6f42c1;
+}
+
+#recursos {
+    color: white;
+}
+
+#recursos {
+    color: #9bf0e1;
+}
+
+@media (min-width: 992px) {
+    .rotacionar {
+        transform: rotate(30deg);
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .rotacionar {
+        transform: none;
+        padding-left: 0;
+    }
+}
